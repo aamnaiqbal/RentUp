@@ -1,3 +1,5 @@
+import { FaTrophy, FaBriefcase, FaLightbulb, FaHeart } from "react-icons/fa";
+
 export const nav = [
   {
     text: "home",
@@ -26,27 +28,27 @@ export const nav = [
 ];
 export const featured = [
   {
-    cover: "../images/hero/h1.png",
+    imgPath: "/images/hero/h1.png",
     name: "Family House",
     total: "122 Property",
   },
   {
-    cover: "../images/hero/h2.png",
+    imgPath: "/images/hero/h2.png",
     name: "House & Villa",
     total: "155 Property",
   },
   {
-    cover: "../images/hero/h3.png",
+    imgPath: "/images/hero/h3.png",
     name: "Apartment",
     total: "300 Property",
   },
   {
-    cover: "../images/hero/h4.png",
+    imgPath: "/images/hero/h4.png",
     name: "Office & Studio",
     total: "80 Property",
   },
   {
-    cover: "../images/hero/h6.png",
+    imgPath: "/images/hero/h5.png",
     name: "Villa & Condo",
     total: "80 Property",
   },
@@ -54,7 +56,7 @@ export const featured = [
 export const list = [
   {
     id: 1,
-    cover: "../images/list/p-1.png",
+    cover: "/images/list/p-1.png",
     name: "Red Carpet Real Estate",
     location: "210 Zirak Road, Canada",
     category: "For Rent",
@@ -63,7 +65,7 @@ export const list = [
   },
   {
     id: 2,
-    cover: "../images/list/p-2.png",
+    cover: "/images/list/p-1.png",
     name: "Fairmount Properties",
     location: "5698 Zirak Road, NewYork",
     category: "For Sale",
@@ -72,7 +74,7 @@ export const list = [
   },
   {
     id: 3,
-    cover: "../images/list/p-7.png",
+    cover: "/images/list/p-1.png",
     name: "The Real Estate Corner",
     location: "5624 Mooker Market, USA",
     category: "For Rent",
@@ -81,7 +83,7 @@ export const list = [
   },
   {
     id: 4,
-    cover: "../images/list/p-4.png",
+    cover: "/images/list/p-1.png",
     name: "Herringbone Realty",
     location: "5621 Liverpool, London",
     category: "For Sale",
@@ -90,7 +92,7 @@ export const list = [
   },
   {
     id: 5,
-    cover: "../images/list/p-5.png",
+    cover: "/images/list/p-1.png",
     name: "Brick Lane Realty",
     location: "210 Montreal Road, Canada",
     category: "For Rent",
@@ -99,7 +101,7 @@ export const list = [
   },
   {
     id: 6,
-    cover: "../images/list/p-6.png",
+    cover: "/images/list/p-1.png",
     name: "Banyon Tree Realty",
     location: "210 Zirak Road, Canada",
     category: "For Sale",
@@ -109,22 +111,22 @@ export const list = [
 ];
 export const awards = [
   {
-    icon: <i class="fa-solid fa-trophy"></i>,
+    icon: <FaTrophy />,
     num: "32 M	",
     name: "Blue Burmin Award",
   },
   {
-    icon: <i class="fa-solid fa-briefcase"></i>,
+    icon: <FaBriefcase />,
     num: "43 M",
     name: "Mimo X11 Award",
   },
   {
-    icon: <i class="fa-solid fa-lightbulb"></i>,
+    icon: <FaLightbulb />,
     num: "51 M",
     name: "Australian UGC Award",
   },
   {
-    icon: <i class="fa-solid fa-heart"></i>,
+    icon: <FaHeart />,
     num: "42 M",
     name: "IITCA Green Award",
   },
