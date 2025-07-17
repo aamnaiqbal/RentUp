@@ -1,5 +1,5 @@
 import React from "react";
-import { footer } from "@/app/components/data";
+import { footer } from "@/components/data";
 
 const Footer = () => {
   return (

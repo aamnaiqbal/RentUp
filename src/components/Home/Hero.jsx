@@ -7,15 +7,17 @@ const Hero = () => {
         className="bg-cover bg-center h-[90vh] w-full"
         style={{ backgroundImage: "url('/images/banner.png')" }}
       >
-        <div className="container mx-auto px-4 pt-[15%] md:pt-[15%] sm:pt-[30%]">
-          <div className="text-center text-white">
-            <h1 className="text-6xl  font-semibold">Search Your Next Home</h1>
+        <div className="container mx-auto px-4 pt-[10%] md:pt-[12%] lg:pt-[15%]">
+          <div className="text-center text-white mx-auto lg:w-[50%]">
+            <h1 className="text-3xl sm:text-4xl lg:text-6xl  font-semibold lg:leading-[1.2]">
+              Search Your Next Home
+            </h1>
             <p className="opacity-80">
               Find new & featured property located in your local city.
             </p>
           </div>
 
-          <form className="bg-white rounded-[5px] mt-[15%] lg:[30%] px-5 flex flex-wrap md:flex-nowrap shadow-md">
+          <form className="bg-white rounded-[5px] mt-[7%] px-5 flex flex-wrap md:flex-nowrap shadow-md">
             {/* City/Street */}
             <div className="p-[15px] w-full md:w-auto border-l-0 md:border-l border-gray-300/20">
               <span className="text-sm text-gray-500">City/Street</span>
