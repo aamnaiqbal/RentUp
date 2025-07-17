@@ -1,117 +1,67 @@
 import React from "react";
-import Image from "next/image";
-
+import { FaSearch } from "react-icons/fa";
 const Hero = () => {
   return (
     <>
-      <section className="relative h-[100vh]">
-        <Image
-          src="/images/banner.png"
-          alt="Hero Background"
-          layout="fill"
-          objectFit="cover"
-          className="z-0"
-          priority
-        />
-        <div className="absolute inset-0 bg-[#0c0c3f]/70 z-10"></div>
-        {/* <div className="mx-auto max-w-[80%]">
-          <Heading
-            title="Search Your Next Home "
-            subtitle="Find new & featured property located in your local city."
-          />
+      <section
+        className="bg-cover bg-center h-[90vh] w-full"
+        style={{ backgroundImage: "url('/images/banner.png')" }}
+      >
+        <div className="container mx-auto px-4 pt-[15%] md:pt-[15%] sm:pt-[30%]">
+          <div className="text-center text-white">
+            <h1 className="text-6xl  font-semibold">Search Your Next Home</h1>
+            <p className="opacity-80">
+              Find new & featured property located in your local city.
+            </p>
+          </div>
 
-          <form className="flex">
-            <div className="box">
-              <span>City/Street</span>
-              <input type="text" placeholder="Location" />
+          <form className="bg-white rounded-[5px] mt-[15%] lg:[30%] px-5 flex flex-wrap md:flex-nowrap shadow-md">
+            {/* City/Street */}
+            <div className="p-[15px] w-full md:w-auto border-l-0 md:border-l border-gray-300/20">
+              <span className="text-sm text-gray-500">City/Street</span>
+              <input
+                type="text"
+                placeholder="Location"
+                className="w-full mt-1 p-[10px] border border-gray-300/20 rounded-[5px] placeholder:text-black placeholder:text-[17px]"
+              />
             </div>
-            <div className="box">
-              <span>Property Type</span>
-              <input type="text" placeholder="Property Type" />
+
+            {/* Property Type */}
+            <div className="p-[15px] w-full md:w-auto border-l-0 md:border-l border-gray-300/20">
+              <span className="text-sm text-gray-500">Property Type</span>
+              <input
+                type="text"
+                placeholder="Property Type"
+                className="w-full mt-1 p-[10px] border border-gray-300/20 rounded-[5px] placeholder:text-black placeholder:text-[17px]"
+              />
             </div>
-            <div className="box">
-              <span>Price Range</span>
-              <input type="text" placeholder="Price Range" />
+
+            {/* Price Range */}
+            <div className="p-[15px] w-full md:w-auto border-l-0 md:border-l border-gray-300/20">
+              <span className="text-sm text-gray-500">Price Range</span>
+              <input
+                type="text"
+                placeholder="Price Range"
+                className="w-full mt-1 p-[10px] border border-gray-300/20 rounded-[5px] placeholder:text-black placeholder:text-[17px]"
+              />
             </div>
-            <div className="box">
-              <h4>Advance Filter</h4>
+
+            {/* Advance Filter Box */}
+            <div className="p-[15px] w-full md:w-auto border-l-0 md:border-l border-gray-300/20 flex items-center justify-between">
+              <h4 className="font-medium">Advance Filter</h4>
+              {/* Search Button */}
+              <button
+                type="submit"
+                className="bg-[#27ae60] text-white px-5 py-4 rounded-r md:rounded md:ml-4 mt-4 md:mt-0 hover:bg-[#1e944d] cursor-pointer transition"
+              >
+                <FaSearch />
+              </button>
             </div>
-            <button className="btn1">
-              <i className="fa fa-search"></i>
-            </button>
           </form>
-        </div> */}
+        </div>
       </section>
     </>
   );
 };
 
 export default Hero;
-
-/* 
-.hero {
-  background-image: url("../../../../public/images/banner.png");
-  background-repeat: no-repeat;
-  background-position: center;
-  background-size: cover;
-  height: 90vh;
-  width: 100%;
-}
-.hero .container {
-  padding-top: 15%;
-}
-.hero h1 {
-  color: #fff;
-  font-size: 60px;
-}
-.hero p {
-  color: #fff;
-  opacity: 0.8;
-}
-form {
-  background-color: #fff;
-  border-radius: 5px;
-  margin-top: 50px;
-  padding: 0 20px;
-}
-form input {
-  padding: 10px;
-  width: 100%;
-  border: 1px solid rgba(128, 128, 128, 0.2);
-  margin-top: 5px;
-  border-radius: 5px;
-}
-form span {
-  font-size: 14px;
-  color: grey;
-}
-input::placeholder {
-  font-size: 17px;
-  color: black;
-}
-form .box {
-  padding: 15px;
-  border-left: 1px solid rgba(128, 128, 128, 0.2);
-}
-form .box:nth-child(1) {
-  border-left: none;
-}
-form h4 {
-  font-weight: 500;
-}
-@media screen and (max-width: 800px) {
-  .hero .container {
-    padding-top: 30%;
-  }
-  form {
-    display: flex;
-    flex-wrap: wrap;
-  }
-  form .box {
-    border-left: none;
-  }
-  form input {
-    width: 100%;
-  }
-}
-*/

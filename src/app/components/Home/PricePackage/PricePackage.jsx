@@ -1,8 +1,9 @@
 import React from "react";
+import PriceCard from "./PriceCard";
 
 const PricePackage = () => {
   return (
-    <section className="bg-[#122947] py-20 text-center">
+    <section className="py-20 text-center">
       <div className="max-w-[80%] mx-auto">
         <div className="text-center">
           <h1 className="text-6xl font-semibold text-[#2d3954]">
@@ -14,6 +15,7 @@ const PricePackage = () => {
             dolores
           </p>
         </div>
+        <PriceCard />
       </div>
     </section>
   );

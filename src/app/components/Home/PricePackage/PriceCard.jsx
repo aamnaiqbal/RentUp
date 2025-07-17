@@ -1,54 +1,121 @@
+// import React from "react";
+// import { price } from "../../data/Data";
+
+// const PriceCard = () => {
+//   return (
+//     <>
+//       <div className="content flex mtop">
+//         {price.map((item, index) => (
+//           <div className="box shadow" key={index}>
+//             <div className="topbtn">
+//               <button className="btn3">{item.best}</button>
+//             </div>
+//             <h3>{item.plan}</h3>
+//             <h1>
+//               <span>$</span>
+//               {item.price}
+//             </h1>
+//             <p>{item.ptext}</p>
+
+//             <ul>
+//               {item.list.map((val) => {
+//                 const { icon, text, change } = val;
+//                 return (
+//                   <li>
+//                     <label
+//                       style={{
+//                         background:
+//                           change === "color" ? "#dc35451f" : "#27ae601f",
+//                         color: change === "color" ? "#dc3848" : "#27ae60",
+//                       }}
+//                     >
+//                       {icon}
+//                     </label>
+//                     <p>{text}</p>
+//                   </li>
+//                 );
+//               })}
+//             </ul>
+//             <button
+//               className="btn5"
+//               style={{
+//                 background: item.plan === "Standard" ? "#27ae60" : "#fff",
+//                 color: item.plan === "Standard" ? "#fff" : "#27ae60",
+//               }}
+//             >
+//               Start {item.plan}
+//             </button>
+//           </div>
+//         ))}
+//       </div>
+//     </>
+//   );
+// };
+
+// export default PriceCard;
+
 import React from "react";
-import { price } from "../../data/Data";
+import { price } from "../../data";
 
 const PriceCard = () => {
   return (
-    <>
-      <div className="content flex mtop">
+    <div className="text-center">
+      <div className="flex flex-wrap lg:flex-nowrap justify-center gap-6 mt-8">
         {price.map((item, index) => (
-          <div className="box shadow" key={index}>
-            <div className="topbtn">
-              <button className="btn3">{item.best}</button>
-            </div>
-            <h3>{item.plan}</h3>
-            <h1>
-              <span>$</span>
+          <div
+            key={index}
+            className="w-full sm:w-[90%] md:w-[48%] lg:w-[31.5%] p-[30px] rounded-[10px] shadow-[0_0_20px_0_rgba(112,121,138,0.18)] bg-white mb-12 relative"
+          >
+            {/* Top button: hide on 1st & 3rd box */}
+            {index !== 0 && index !== 2 && (
+              <div className="mb-5">
+                <button className="bg-[#ff6922] text-white py-4 px-8 rounded-full text-sm cursor-pointer font-semibold">
+                  {item.best}
+                </button>
+              </div>
+            )}
+
+            <h3 className="text-[22px] font-semibold mb-2">{item.plan}</h3>
+            <h1 className="text-[60px] font-bold">
+              <span className="text-[30px] font-medium align-top">$</span>
               {item.price}
             </h1>
-            <p>{item.ptext}</p>
+            <p className="text-gray-500 mt-2">{item.ptext}</p>
 
-            <ul>
-              {item.list.map((val) => {
+            <ul className="mt-[40px]">
+              {item.list.map((val, i) => {
                 const { icon, text, change } = val;
+                const isDanger = change === "color";
                 return (
-                  <li>
+                  <li key={i} className="flex items-center mb-5">
                     <label
+                      className={`w-[30px] h-[30px] leading-[30px] text-center rounded-full mr-5 text-sm font-medium`}
                       style={{
-                        background:
-                          change === "color" ? "#dc35451f" : "#27ae601f",
-                        color: change === "color" ? "#dc3848" : "#27ae60",
+                        background: isDanger ? "#dc35451f" : "#27ae601f",
+                        color: isDanger ? "#dc3848" : "#27ae60",
                       }}
                     >
                       {icon}
                     </label>
-                    <p>{text}</p>
+                    <p className="text-sm">{text}</p>
                   </li>
                 );
               })}
             </ul>
+
             <button
-              className="btn5"
-              style={{
-                background: item.plan === "Standard" ? "#27ae60" : "#fff",
-                color: item.plan === "Standard" ? "#fff" : "#27ae60",
-              }}
+              className={`w-full py-5 px-10 font-semibold border-[5px] border-[#27ae601f] text-[20px] font-normal rounded-full  transition-all duration-300 ${
+                item.plan === "Standard"
+                  ? "bg-[#27ae60] text-white"
+                  : "bg-white text-[#27ae60] border-green-600"
+              }`}
             >
               Start {item.plan}
             </button>
           </div>
         ))}
       </div>
-    </>
+    </div>
   );
 };
 

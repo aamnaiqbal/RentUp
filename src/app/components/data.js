@@ -1,4 +1,11 @@
-import { FaTrophy, FaBriefcase, FaLightbulb, FaHeart } from "react-icons/fa";
+import {
+  FaTrophy,
+  FaBriefcase,
+  FaLightbulb,
+  FaHeart,
+  FaCheck,
+} from "react-icons/fa";
+import { ImCross } from "react-icons/im";
 
 export const nav = [
   {
@@ -184,75 +191,39 @@ export const location = [
 export const team = [
   {
     list: "50",
-    cover: "../images/customer/team-1.jpg",
+    cover: "/images/customer/team-1.jpg",
     address: "Liverpool, Canada",
     name: "Sargam S. Singh",
-    icon: [
-      <i class="fa-brands fa-facebook-f"></i>,
-      <i class="fa-brands fa-linkedin"></i>,
-      <i class="fa-brands fa-twitter"></i>,
-      <i class="fa-brands fa-instagram"></i>,
-    ],
   },
   {
     list: "70",
-    cover: "../images/customer/team-2.jpg",
+    cover: "/images/customer/team-2.jpg",
     address: "Montreal, Canada",
     name: "Harijeet M. Siller",
-    icon: [
-      <i class="fa-brands fa-facebook-f"></i>,
-      <i class="fa-brands fa-linkedin"></i>,
-      <i class="fa-brands fa-twitter"></i>,
-      <i class="fa-brands fa-instagram"></i>,
-    ],
   },
   {
     list: "80",
-    cover: "../images/customer/team-3.jpg",
+    cover: "/images/customer/team-3.jpg",
     address: "Denever, USA",
     name: "Anna K. Young",
-    icon: [
-      <i class="fa-brands fa-facebook-f"></i>,
-      <i class="fa-brands fa-linkedin"></i>,
-      <i class="fa-brands fa-twitter"></i>,
-      <i class="fa-brands fa-instagram"></i>,
-    ],
   },
   {
     list: "51",
-    cover: "../images/customer/team-4.jpg",
+    cover: "/images/customer/team-4.jpg",
     address: "2272 Briarwood Drive",
     name: "Michael P. Grimaldo",
-    icon: [
-      <i class="fa-brands fa-facebook-f"></i>,
-      <i class="fa-brands fa-linkedin"></i>,
-      <i class="fa-brands fa-twitter"></i>,
-      <i class="fa-brands fa-instagram"></i>,
-    ],
   },
   {
     list: "42",
-    cover: "../images/customer/team-5.jpg",
+    cover: "/images/customer/team-5.jpg",
     address: "2272 Briarwood Drive",
     name: "Michael P. Grimaldo",
-    icon: [
-      <i class="fa-brands fa-facebook-f"></i>,
-      <i class="fa-brands fa-linkedin"></i>,
-      <i class="fa-brands fa-twitter"></i>,
-      <i class="fa-brands fa-instagram"></i>,
-    ],
   },
   {
     list: "38",
-    cover: "../images/customer/team-5.jpg",
+    cover: "/images/customer/team-5.jpg",
     address: "Montreal, USA",
     name: "Adam K. Jollio",
-    icon: [
-      <i class="fa-brands fa-facebook-f"></i>,
-      <i class="fa-brands fa-linkedin"></i>,
-      <i class="fa-brands fa-twitter"></i>,
-      <i class="fa-brands fa-instagram"></i>,
-    ],
   },
 ];
 export const price = [
@@ -262,25 +233,25 @@ export const price = [
     ptext: "per user, per month",
     list: [
       {
-        icon: <i class="fa-solid fa-check"></i>,
+        icon: <FaCheck className="mx-auto mt-2" />,
         text: "99.5% Uptime Guarantee",
       },
       {
-        icon: <i class="fa-solid fa-check"></i>,
+        icon: <FaCheck className="mx-auto mt-2" />,
         text: "120GB CDN Bandwidth",
       },
       {
-        icon: <i class="fa-solid fa-check"></i>,
+        icon: <FaCheck className="mx-auto mt-2" />,
         text: "5GB Cloud Storage",
       },
       {
         change: "color",
-        icon: <i class="fa-solid fa-x"></i>,
+        icon: <ImCross className="mx-auto mt-2" />,
         text: "Personal Help Support",
       },
       {
         change: "color",
-        icon: <i class="fa-solid fa-x"></i>,
+        icon: <ImCross className="mx-auto mt-2" />,
         text: "Enterprise SLA",
       },
     ],
@@ -292,24 +263,24 @@ export const price = [
     ptext: "per user, per month",
     list: [
       {
-        icon: <i class="fa-solid fa-check"></i>,
+        icon: <FaCheck className="mx-auto mt-2" />,
         text: "99.5% Uptime Guarantee",
       },
       {
-        icon: <i class="fa-solid fa-check"></i>,
+        icon: <FaCheck className="mx-auto mt-2" />,
         text: "150GB CDN Bandwidth",
       },
       {
-        icon: <i class="fa-solid fa-check"></i>,
+        icon: <FaCheck className="mx-auto mt-2" />,
         text: "10GB Cloud Storage",
       },
       {
-        icon: <i class="fa-solid fa-check"></i>,
+        icon: <FaCheck className="mx-auto mt-2" />,
         text: "Personal Help Support",
       },
       {
         change: "color",
-        icon: <i class="fa-solid fa-x"></i>,
+        icon: <ImCross className="mx-auto mt-2" />,
         text: "Enterprise SLA",
       },
     ],
@@ -320,23 +291,23 @@ export const price = [
     ptext: "2 user, per month",
     list: [
       {
-        icon: <i class="fa-solid fa-check"></i>,
+        icon: <FaCheck className="mx-auto mt-2" />,
         text: "100% Uptime Guarantee",
       },
       {
-        icon: <i class="fa-solid fa-check"></i>,
+        icon: <FaCheck className="mx-auto mt-2" />,
         text: "200GB CDN Bandwidth",
       },
       {
-        icon: <i class="fa-solid fa-check"></i>,
+        icon: <FaCheck className="mx-auto mt-2" />,
         text: "20GB Cloud Storage",
       },
       {
-        icon: <i class="fa-solid fa-check"></i>,
+        icon: <FaCheck className="mx-auto mt-2" />,
         text: "Personal Help Support",
       },
       {
-        icon: <i class="fa-solid fa-check"></i>,
+        icon: <FaCheck className="mx-auto mt-2" />,
         text: "Enterprise SLA",
       },
     ],
