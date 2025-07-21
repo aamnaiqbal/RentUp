@@ -28,8 +28,8 @@ const Header = () => {
               className={`${
                 navList
                   ? "absolute top-[10vh] left-0 w-full bg-[#27ae60] p-5 flex flex-col"
-                  : "hidden md:flex"
-              } gap-6 font-medium transition-all duration-300`}
+                  : "hidden lg:flex"
+              } gap-2 lg:gap-3 xl:gap-6 font-medium transition-all duration-300`}
             >
               {nav.map((list, index) => (
                 <li key={index}>
@@ -47,7 +47,7 @@ const Header = () => {
           </div>
 
           {/* Right Buttons */}
-          <div className="button hidden md:flex items-center gap-4">
+          <div className="button hidden lg:flex items-center gap-4">
             <h4 className="font-medium mr-[20px] flex items-center">
               <span className="px-[6px] bg-[#27ae60] rounded-full text-white text-sm mr-[4px] font-normal">
                 2
@@ -61,7 +61,7 @@ const Header = () => {
           </div>
 
           {/* Toggle Button for Mobile */}
-          <div className="toggle md:hidden">
+          <div className="toggle lg:hidden">
             <button
               onClick={() => setNavList(!navList)}
               className="mt-[20px] text-xl"

@@ -48,7 +48,7 @@ const PriceCard = () => {
             </ul>
 
             <button
-              className={`w-full py-5 px-10 font-semibold border-[5px] border-[#27ae601f] text-[20px] font-normal rounded-full  transition-all duration-300 ${
+              className={`w-full py-3 px-8 md:py-5 md:px-10 font-semibold border-[3px] lg:border-[5px] border-[#27ae601f] text-lg lg:text-xl font-normal rounded-full  transition-all duration-300 ${
                 item.plan === "Standard"
                   ? "bg-[#27ae60] text-white"
                   : "bg-white text-[#27ae60] border-green-600"
