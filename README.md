@@ -1,4 +1,4 @@
-# 🎓 GreatStack Education Website Clone
+# 🎓 RentUp -- A Residence and Real Estate Website
 
 ## 📦 Installation & Running Locally
 
